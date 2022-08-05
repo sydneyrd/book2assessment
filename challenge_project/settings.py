@@ -42,7 +42,6 @@ INSTALLED_APPS = [
     'corsheaders',
     'challenge_api'
 ]
-
 REST_FRAMEWORK = {
     'DEFAULT_AUTHENTICATION_CLASSES': (
         'rest_framework.authentication.TokenAuthentication',

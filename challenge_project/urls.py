@@ -16,9 +16,11 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 from rest_framework.routers import DefaultRouter
+from challenge_api.views import PetView
 
 router = DefaultRouter(trailing_slash=False)
 # TODO: Register your routes here
+router.register(r'pets', PetView, 'pets')
 
 urlpatterns = [
     path('admin/', admin.site.urls),
